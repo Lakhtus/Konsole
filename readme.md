@@ -1,9 +1,3 @@
-Perfect! That gives me a much clearer picture of your project’s *identity*. It’s not just “Game of Life in a console” anymore — it’s more like a **mini educational rendering & simulation sandbox** in C++ where you’re experimenting with rasterization, 2D/3D graphics fundamentals, and simulation frameworks.
-
-Here’s a **revamped, exciting README** draft tailored to your vision:
-
----
-
 # 🖥️ Konsole – An Educational C++ Rendering & Simulation Sandbox
 
 **Konsole** is a tiny but ambitious project where I explore the **fundamentals of computer graphics and simulations** from scratch.
