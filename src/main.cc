@@ -40,8 +40,6 @@ protected:
 
         window->drawCircle(mouseX, mouseY, 10, RGB(255, 0, 0));         // Bright red
         window->drawCircle(25, 25, 7, RGB(0, 0, 255));                  // Bright blue
-        window->drawLine(20, 15, 34, 34, RGB(0, 0, 0));               // Bright green
-        window->drawLine(34, 15, 20, 34, RGB(0, 0, 0));               // Bright green
         window->drawLine(0, 0, w - 1, h - 1, RGB(0, 0, 0));             // Black
         window->drawLine(0, h - 1, w - 1, 0, RGB(0, 0, 0));             // Black
 
