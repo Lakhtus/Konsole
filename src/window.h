@@ -84,10 +84,33 @@ public:
 
             }
         }
+    }
+
+    void drawLine(int x1, int y1, int x2, int y2, uint32_t color) {
+        int steps = 0;
+        float dx = abs(x2-x1); float dy = abs(y2-y1);
+        int xi = 0 ; int yi = 0 ;
 
 
+        if (dx>dy) {
+            steps = dx ;
+        }else {
+            steps = dy;
+        }
+
+        
+        for (int i = 0; i <= steps; i++){
+            xi = x1 + round(dx/steps * i) ;
+            yi = y1 + round(dy/steps * i) ;
+            
+            setPixel(xi, yi, color);
+
+        }
 
     }
+
+
+
 
 
 protected:

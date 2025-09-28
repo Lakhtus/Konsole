@@ -12,7 +12,6 @@ protected:
     bool createWindow() override {
         // window = new FensterWindow(width, height, title);
         window = new GridWindow(width, height, title);
-
         return window != nullptr;
     }
     void onUpdate() override {
@@ -32,9 +31,20 @@ protected:
         // drawCheckerboard(f, t);
         // window->drawCircle(mouseX, mouseY, 5, RGB(255, 14, 155));
         // window->setPixel(mouseX, mouseY, RGB(255, 14, 155));
+        // grid size  72x54
+        const int maxW = 71, maxH = 51;
+        int w = std::min(window->getWidth(), maxW);
+        int h = std::min(window->getHeight(), maxH);
 
-        window->drawCircle(mouseX, mouseY, 10, RGB(255, 14, 155));
-        window->drawCircle(25, 25, 7, RGB(0, 200, 255));
+
+
+        window->drawCircle(mouseX, mouseY, 10, RGB(255, 0, 0));         // Bright red
+        window->drawCircle(25, 25, 7, RGB(0, 0, 255));                  // Bright blue
+        window->drawLine(20, 15, 34, 34, RGB(0, 0, 0));               // Bright green
+        window->drawLine(34, 15, 20, 34, RGB(0, 0, 0));               // Bright green
+        window->drawLine(0, 0, w - 1, h - 1, RGB(0, 0, 0));             // Black
+        window->drawLine(0, h - 1, w - 1, 0, RGB(0, 0, 0));             // Black
+
     }
 
     void onUserInput() override {

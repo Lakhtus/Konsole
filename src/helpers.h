@@ -16,3 +16,6 @@
 #define LOG_WARN(...)  SPDLOG_WARN(__VA_ARGS__)
 #define LOG_ERROR(...) SPDLOG_ERROR(__VA_ARGS__)
 #define LOG_CRIT(...)  SPDLOG_CRITICAL(__VA_ARGS__)
+
+
+#define RGB(r,g,b) ((uint32_t)(((r)&0xff)<<16) | (((g)&0xff)<<8) | ((b)&0xff))
